@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+
+APP_NAME="appcontrolemantec-api"
+CERT_DIR="./certs"
+IMAGE_NAME="$APP_NAME"
+
+echo "🔐 Convertendo privkey.pem para PKCS#8 (compatível com Kestrel)..."
+openssl pkcs8 -topk8 -inform PEM -outform PEM -nocrypt \
+  -in "$CERT_DIR/privkey.pem" -out "$CERT_DIR/privkey8.pem"
+
+mv "$CERT_DIR/privkey8.pem" "$CERT_DIR/privkey.pem"
+chmod 600 "$CERT_DIR/privkey.pem"
+echo "✅ Chave convertida com sucesso."
+
+echo "🧼 Removendo container antigo se existir..."
+docker stop $APP_NAME 2>/dev/null || true
+docker rm $APP_NAME 2>/dev/null || true
+
+echo "🐳 Buildando nova imagem Docker..."
+docker build -t $IMAGE_NAME .
+
+echo "🚀 Subindo o container..."
+docker run -d \
+  -p 5003:5003 \
+  -p 5004:5004 \
+  --name $APP_NAME \
+  -v "$(pwd)/certs:/app/certs:ro" \
+  $IMAGE_NAME
+
+echo "✅ Aplicação '$APP_NAME' está rodando com os certificados corretos."

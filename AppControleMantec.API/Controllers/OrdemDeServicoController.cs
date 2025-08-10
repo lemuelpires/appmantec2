@@ -104,7 +104,7 @@ namespace AppControleMantec.API.Controllers
             }
         }
 
-        // DELETE: api/ordemdeservico/{id}
+        // PUT: api/ordemdeservico/desativar/{id}
         [HttpPut("desativar/{id}")]
         public async Task<IActionResult> DesativarOrdemDeServico(string id)
         {

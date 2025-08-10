@@ -7,6 +7,7 @@ namespace AppControleMantec.Application.AppOrdemDeServico.Queries
     {
         public string Id { get; set; }
 
+        // O construtor agora inicializa o Id
         public OrdemDeServicoGetByIdQuery(string id)
         {
             Id = id;

@@ -18,6 +18,7 @@ namespace AppControleMantec.Infra.Data.Mongo
             _ordemDeServicoCollection = database.GetCollection<OrdemDeServico>("OrdensDeServico");
         }
 
+
         public async Task InsertOrdemDeServicoAsync(OrdemDeServico ordemDeServico)
         {
             await _ordemDeServicoCollection.InsertOneAsync(ordemDeServico);
@@ -41,7 +42,6 @@ namespace AppControleMantec.Infra.Data.Mongo
             var update = Builders<OrdemDeServico>.Update.Set(os => os.Ativo, false);
             await _ordemDeServicoCollection.UpdateOneAsync(filter, update);
         }
-
 
         public async Task AtivarOrdemDeServicoAsync(string id)
         {
