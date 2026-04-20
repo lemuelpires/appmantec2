@@ -196,3 +196,4 @@ C:\Projetos\projetoMantec\AppControleMantec_Back\AppControleMantec.API\obj\Debug
 C:\Projetos\projetoMantec\AppControleMantec_Back\AppControleMantec.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Projetos\projetoMantec\AppControleMantec_Back\AppControleMantec.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 C:\Projetos\projetoMantec\AppControleMantec_Back\AppControleMantec.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Projetos\projetoMantec\AppControleMantec_Back\AppControleMantec.API\obj\Debug\net8.0\swae.build.ex.cache

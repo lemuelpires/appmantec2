@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "oO5yGcgZucw9668h1dACeXliFuznE+MpNJieuk6XyN8=",
-  "Source": "AppControleMantec.API",
-  "BasePath": "_content/AppControleMantec.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"4Ay7NwE26dgQTmajOtKOqEImOOkFai8KnC5UdjP0VxA=","Source":"AppControleMantec.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
