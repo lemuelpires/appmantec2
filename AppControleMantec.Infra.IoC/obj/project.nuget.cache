@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hpu+I+zuaT4=",
+  "dgSpecHash": "ziJbn9LT2BI=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\projetoMantec\\AppControleMantec_Back\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
+  "projectFilePath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lemuel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\lemuel\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
@@ -60,9 +60,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "O pacote 'AutoMapper' 13.0.1 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "C:\\Projetos\\projetoMantec\\AppControleMantec_Back\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
+      "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Projetos\\projetoMantec\\AppControleMantec_Back\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
+      "filePath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"

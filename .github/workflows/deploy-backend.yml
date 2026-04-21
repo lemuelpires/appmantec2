@@ -1,0 +1,49 @@
+name: Deploy Backend .NET
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 📦 Checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 🔐 Login Docker Hub
+      - name: Login Docker Hub
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+
+      # 🐳 Build da imagem
+      - name: Build image
+        run: docker build -t mantecsystems/mantec2-back:latest .
+
+      # 📤 Push da imagem
+      - name: Push image
+        run: docker push mantecsystems/mantec2-back:latest
+
+      # 🚀 Deploy (SERVIÇO DE TESTE)
+      - name: Deploy no servidor via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker pull mantecsystems/mantec2-back:latest
+
+            # remove teste anterior (se existir)
+            docker service rm automacao_mantec2 || true
+
+            # sobe nova versão de teste na porta 5010
+            docker service create \
+              --replicas 2 \
+              --name automacao_mantec2 \
+              --network backend \
+              -p 5010:5010 \
+              -e ASPNETCORE_URLS=http://+:5010 \
+              mantecsystems/mantec2-back:latest
