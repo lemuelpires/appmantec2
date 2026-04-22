@@ -8,13 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # 📦 Checkout
+      # 📦 Checkout do código
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 🔐 Login Docker Hub
+      # 🔐 Login no Docker Hub
       - name: Login Docker Hub
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
@@ -26,7 +25,7 @@ jobs:
       - name: Push image
         run: docker push mantecsystems/mantec2-back:latest
 
-      # 🚀 Deploy (SERVIÇO DE TESTE)
+      # 🚀 Deploy via Stack no Swarm
       - name: Deploy no servidor via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
@@ -34,16 +33,12 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            # 1. Forçar o download da imagem mais recente no servidor
             docker pull mantecsystems/mantec2-back:latest
-
-            # remove teste anterior (se existir)
-            docker service rm automacao_mantec2 || true
-
-            # sobe nova versão de teste na porta 5010
-            docker service create \
-              --replicas 2 \
-              --name automacao_mantec2 \
-              --network backend \
-              -p 5010:5010 \
-              -e ASPNETCORE_URLS=http://+:5010 \
-              mantecsystems/mantec2-back:latest
+            
+            # 2. Entrar na pasta onde estão os seus arquivos .yml
+            cd ~/stacks/05-apps
+            
+            # 3. Atualizar a stack 'm2' usando o arquivo mantec2.yml
+            # O Swarm detectará a mudança na imagem e fará o Rolling Update automaticamente.
+            docker stack deploy -c mantec2.yml m2
