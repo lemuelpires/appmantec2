@@ -10,35 +10,37 @@ jobs:
     runs-on: [self-hosted, prod]
 
     steps:
-      # 📦 Checkout do código
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 🔐 Login no Docker Hub
       - name: Login Docker Hub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+        run: |
+          echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-      # 🐳 Build da imagem
+      - name: Definir versão
+        run: |
+          echo "IMAGE_TAG=${GITHUB_SHA::7}" >> $GITHUB_ENV
+
       - name: Build image
-        run: docker build -t mantecsystems/mantec2-back:latest .
+        run: |
+          docker build \
+            -t mantecsystems/mantec2-back:latest \
+            -t mantecsystems/mantec2-back:${IMAGE_TAG} \
+            .
 
-      # 📤 Push da imagem
       - name: Push image
-        run: docker push mantecsystems/mantec2-back:latest
+        run: |
+          docker push mantecsystems/mantec2-back:latest
+          docker push mantecsystems/mantec2-back:${IMAGE_TAG}
 
-      # 🚀 Deploy local (sem SSH)
-      - name: Deploy no Swarm (teste)
+      - name: Atualizar stack
         run: |
           docker pull mantecsystems/mantec2-back:latest
 
-          # remove serviço anterior (se existir)
-          docker service rm automacao_mantec2 || true
+          docker stack deploy \
+            -c /home/lemuel/stacks/05-apps/mantec2.yml \
+            mantec2
 
-          # sobe nova versão
-          docker service create \
-            --replicas 2 \
-            --name automacao_mantec2 \
-            --network backend \
-            -p 5010:5010 \
-            -e ASPNETCORE_URLS=http://+:5010 \
-            mantecsystems/mantec2-back:latest
+      - name: Verificar deploy
+        run: |
+          docker stack services mantec2
