@@ -18,9 +18,17 @@ namespace AppControleMantec.Infra.Data.Mongo
             _ordemDeServicoCollection = database.GetCollection<OrdemDeServico>("OrdensDeServico");
         }
 
-
         public async Task InsertOrdemDeServicoAsync(OrdemDeServico ordemDeServico)
         {
+            // Busca o maior NumeroOS atual
+            var ultimaOrdem = await _ordemDeServicoCollection
+                .Find(_ => true)
+                .SortByDescending(os => os.NumeroOS)
+                .Limit(1)
+                .FirstOrDefaultAsync();
+
+            ordemDeServico.NumeroOS = (ultimaOrdem?.NumeroOS ?? 0) + 1;
+
             await _ordemDeServicoCollection.InsertOneAsync(ordemDeServico);
         }
 

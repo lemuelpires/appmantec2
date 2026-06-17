@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppControleMantec.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76f70262a86072961063750a1d0a2172bcbcbdab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebcf745d843270baacde1aa3684f7e24bff00829")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppControleMantec.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppControleMantec.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

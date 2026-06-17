@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj": {}
+    "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj": {
+    "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj",
+        "projectUniqueName": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj",
         "projectName": "AppControleMantec.API",
-        "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj",
+        "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.API\\AppControleMantec.API.csproj",
         "packagesPath": "C:\\Users\\lemuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.API\\obj\\",
+        "outputPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,13 +31,14 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj": {
-                "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj"
+              "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj": {
+                "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj"
               },
-              "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj": {
-                "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj"
+              "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj": {
+                "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj"
               }
             }
           }
@@ -52,10 +53,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
@@ -146,18 +148,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj": {
+    "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj",
+        "projectUniqueName": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj",
         "projectName": "AppControleMantec.Application",
-        "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj",
+        "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj",
         "packagesPath": "C:\\Users\\lemuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\obj\\",
+        "outputPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -177,10 +179,11 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj"
+              "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj"
               }
             }
           }
@@ -195,10 +198,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
@@ -282,18 +286,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj": {
+    "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj",
+        "projectUniqueName": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj",
         "projectName": "AppControleMantec.Domain",
-        "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj",
+        "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj",
         "packagesPath": "C:\\Users\\lemuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\obj\\",
+        "outputPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -313,6 +317,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -327,10 +332,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "MediatR": {
@@ -410,18 +416,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj": {
+    "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj",
+        "projectUniqueName": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj",
         "projectName": "AppControleMantec.Infra.Data.Mongo",
-        "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj",
+        "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj",
         "packagesPath": "C:\\Users\\lemuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\obj\\",
+        "outputPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -441,10 +447,11 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj"
+              "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Domain\\AppControleMantec.Domain.csproj"
               }
             }
           }
@@ -459,10 +466,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "MediatR": {
@@ -542,18 +550,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj": {
+    "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
+        "projectUniqueName": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
         "projectName": "AppControleMantec.Infra.IoC",
-        "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
+        "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.IoC\\AppControleMantec.Infra.IoC.csproj",
         "packagesPath": "C:\\Users\\lemuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.IoC\\obj\\",
+        "outputPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -573,13 +581,14 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj": {
-                "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj"
+              "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj": {
+                "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Application\\AppControleMantec.Application.csproj"
               },
-              "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj": {
-                "projectPath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj"
+              "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj": {
+                "projectPath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj"
               }
             }
           }
@@ -594,10 +603,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "AutoMapper": {
@@ -681,7 +691,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

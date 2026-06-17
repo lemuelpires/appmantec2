@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "agQDevdsApk=",
+  "dgSpecHash": "iIhtlW8OfmE=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\projetoMantec\\appback2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj",
+  "projectFilePath": "D:\\Projetos\\projetoMantec\\BackEnd\\MantecBack2.0\\appmantec2\\AppControleMantec.Infra.Data.Mongo\\AppControleMantec.Infra.Data.Mongo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lemuel\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\lemuel\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
